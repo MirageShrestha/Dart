@@ -29,3 +29,11 @@ void main(){
   
 }
 
+void main(){
+  final value = DateTime.now();
+  const value2 = '3';
+  
+  print(value);
+  print(value2);
+}
+
