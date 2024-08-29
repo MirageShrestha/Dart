@@ -37,3 +37,35 @@ void main(){
   print(value2);
 }
 
+String? someValue;
+
+void main() {
+  
+  print(someValue);
+  
+  someValue = null;
+  
+  print (someValue?.length??0);
+  
+  someValue = 'Mirage ';
+  
+  print(someValue!.length);
+}
+
+
+bool isAdult = false;
+
+void main(){
+  //If Statements
+  
+  int age = 1;
+  if(isAdult){
+    print('Adult 21');
+  }
+  else if(age>=18){
+    print('ADULT');
+  } else{
+    print('CHILD');
+  }
+}
+
