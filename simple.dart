@@ -69,3 +69,32 @@ void main(){
   }
 }
 
+void main(){
+  String someValue ='Hi!!';
+  if (someValue.startsWith('H')){
+    print("illee");
+  } else {
+    print('Don');
+  }
+  
+  
+  // Ternary
+  
+  String value = someValue.startsWith('H')?"WOW":"naha";
+  print(value);
+  
+  
+  //Switch Statement
+  switch (someValue){
+    case 'Hi!':
+      print("Hello!");
+     case 'Hi!!':
+      print("Hello!!");
+     case 'Hi!!!':
+      break;
+    default:
+      print("YAHOOO");
+ 
+  }
+  }
+  
