@@ -98,3 +98,25 @@ void main(){
   }
   }
   
+void main(){
+  for(int i = 0; i <= 10; i++){
+    String hi = 'Hello World';
+    print(hi.substring(i , 11));
+    print(1+i);
+  }
+}
+
+
+void main(){
+  for(int i = 0; i < 6; i++){
+    String name = 'mirage';
+    print(name.substring(i, 6));
+  }
+}
+
+void main(){
+  String value = 'hello';
+  for (int i = 0; i<value.length; i++){
+    print(value[i]);
+  }
+}
