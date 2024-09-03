@@ -150,3 +150,106 @@ void main(){
     print(name[i]);
   }
 }
+
+void main(){
+  print(name()); 
+}
+
+String name(){
+  return 'mirage';
+}
+
+
+void main(){
+  var (ID, name, player, type) = printn();
+  print(ID);
+  print(name);
+  print(player);
+  print(type  );
+}
+
+(int, String, bool, String) printn(){
+  return(7, 'mirage', true, 'illusion');
+}
+
+
+void main(){
+  var name = siu();
+  print(name);
+}
+
+
+String? siu(){
+  return null;
+}
+
+void main(){
+  String name = 'Mirage';
+  printName(name);
+  print(name);
+  
+}
+
+void printName(String siu){
+  siu = 'hello';
+  print(siu);
+}
+
+void main(){
+  String value = 'Mirage';
+  printn(12, true, name: value, greeting: 'siuu');
+  
+}
+
+void printn(int age, bool invited, {required String name, required String greeting}){
+  print (name);
+  print(age);
+  print(greeting);
+  print(invited);
+}
+
+void main(){
+    final(age, name) = printStuff();
+  print(age);
+  print(name);
+} 
+
+(int, String) printStuff(){
+  return(7, 'mirage');
+}
+
+
+void main(){
+  final stuff = printStuff();
+  
+  print(stuff);
+  print(stuff.age);
+  print(stuff.name);
+}
+
+({int age, String name}) printStuff(){
+  return (age:12, name:'mirage');
+}
+
+void main(){
+  final stuff = printStuff();
+  stuff();
+  () {
+    print('Yoo');
+  }();
+}
+
+
+Function printStuff(){
+  return(){
+    print('Yooo');
+  };
+}
+
+void main(){
+  final name = printStuff();
+  print(name);
+}
+
+  String printStuff() => 'Mirage';
+
