@@ -120,3 +120,33 @@ void main(){
     print(value[i]);
   }
 }
+
+void main(){
+  int i = 0;
+  while (i <10){
+    print(i);
+    i=i+1;
+  }
+}
+
+
+void main(){
+String value='mirage';
+int i = 0;
+do {
+  print(value[i]);
+  i++;
+} while(i!=i);
+  
+}
+
+void main(){
+  String name = 'samagya';
+  
+  for(int i =0; i<name.length; i++){
+    if (i==1 || i==2 || i==3){
+      break;
+    }
+    print(name[i]);
+  }
+}
