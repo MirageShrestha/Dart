@@ -253,3 +253,102 @@ void main(){
 
   String printStuff() => 'Mirage';
 
+void main() {
+  Cookie cookie = Cookie();  
+  print(cookie.shape);
+  print('${cookie.size} cm');
+  cookie.baking();
+  final isCookieCooling = cookie.isCooling();
+  print(isCookieCooling);
+  
+}
+
+class Cookie {
+  // variables
+  String shape = 'Circle';
+  double size = 15.2; // in cm
+  
+  // method
+  void baking(){
+    print('baking has started');
+  }  
+  bool isCooling(){
+    return false;
+  }
+}
+
+
+void main(){
+  final cookie = Cookie('square', 20);
+  print(cookie.shape);
+  print(cookie.size);
+}
+class Cookie {
+  String shape;
+  double size;
+  //Constructors
+  Cookie(this.shape, this.size){
+    
+    print('Cookie constructor');
+    baking();
+    
+}
+  
+  
+  // method
+  void baking(){
+    print('baking has started');
+  }  
+  bool isCooling(){
+    return false;
+  }
+}
+
+
+void main(){
+  final cookie = Cookie('square', 20);
+  print(cookie.shape);
+  print(cookie.size);
+}
+class Cookie {
+  String? shape='Cookie';
+  double? size;
+  //Constructors
+  Cookie(String shape, double size){
+    
+    print(this.shape);
+    this.shape=shape;
+    this.size=size;
+    
+}
+  
+  
+  // method
+  void baking(){
+    print('baking has started');
+  }  
+  bool isCooling(){
+    return false;
+  }
+}
+
+void main(){
+  final cookie = Cookie(shape:'square', size: 20);
+}
+class Cookie {
+  final String shape;
+  final double size; // final because the constructor is created
+  //Constructors
+  Cookie({required this.shape, required this.size}){
+    baking();
+  }
+  
+  
+  // method
+  void baking(){
+    print('shape $shape and size $size cm');
+  }  
+  bool isCooling(){
+    return false;
+  }
+}
